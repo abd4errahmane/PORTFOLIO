@@ -138,7 +138,7 @@ gsap.utils.toArray(".project").forEach((project) => {
       scrollTrigger: {
         trigger: project,
         toggleActions: "play resume reverse resume",
-        markers: true,
+        markers: false,
         start: "top 80%",
         end: "top 60%",
       }
