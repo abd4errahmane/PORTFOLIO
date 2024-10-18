@@ -1,0 +1,448 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    :root{
+        --yellow : #FFEAC5;
+        --red : rgba(255, 0, 0,0.4);
+    }
+
+    body{
+        font-family: Titillium Web, 'Arial Narrow', Arial, sans-serif;
+        font-size:17px;
+        color: white;
+        background-color: #0f0f0f;
+        height: 200vh;
+    }
+
+    .nav-bar{
+        font-size: 15px;
+        display: flex;    
+        flex-direction: row;  
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-left : 30px;
+        margin-right : 30px;
+        padding: 0px 10px;
+        font-family: Titillium Web;
+    }
+
+    .name{
+        font-size: 17px;
+        color: #FFEAC5;
+    }
+
+    .menus{
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+        top: 2px;
+        right: 2%;
+        color: #F5F5F5;
+    }
+
+    .menus a{
+        color: #F5F5F5;
+        position : relative;
+    }
+
+    .socialmedia a{
+        color: #F5F5F5;
+    }
+
+    svg{
+        transition: transform 0.5s;
+        width: 27px;
+    }
+
+    .socialmedia{
+        display: flex;
+        flex-direction: row;
+        column-gap: 17px;
+        color : #F5F5F5;
+    }
+
+    .github a:hover svg{
+        transform: scale(1.24);
+    }
+
+    .insta a:hover svg{
+        transform: scale(1.24);
+    }
+
+    .email a:hover svg{
+        transform: scale(1.24);
+    }
+
+    svg .email{
+        position: relative;
+        bottom: 10px;
+    }
+
+    .menus div{
+        transition: transform 1s;
+    }
+
+
+    .home-page a:hover div{
+        transform: scale(1.09);
+    }
+
+    .portfolio-page a:hover div{
+        transform: scale(1.09);
+    }
+
+    .skills-page a:hover div{
+        transform: scale(1.09);
+    }
+
+    .identity{
+        display: flex;
+        position: relative;
+        top: 120px;
+        flex-direction: row;
+        justify-content: center;
+        font-family: Titillium Web;
+        font-size: 25px;
+    }
+
+    .logo1 img{
+        border-radius: 50%;
+        height: 250px;
+        box-shadow: 0px 0px 70px rgba(255, 0, 0,0.4);
+    }
+
+    .logo img{
+        border-radius: 50%;
+        height: 200px;
+        box-shadow: 0px 0px 70px rgba(255, 0, 0,0.4);
+    }
+
+    .whos-me{
+        align-self: center;
+        padding: 20px;
+        position: relative;
+        bottom: 10px;
+        width: 430px;
+        right: 15px;
+    }
+
+    .hello{
+        color: #FFEAC5;
+    }
+
+    .cursor {
+        display: inline-block;
+        width: 2px;
+        height: 1em;
+        background-color: var(--yellow);
+        vertical-align: bottom;
+        margin-left: 2px;
+        margin-bottom: 5px;
+        animation: blink 0.7s step-start infinite;
+    }
+
+    span{
+        color: rgba(255, 0, 0, 0.466);
+    }
+
+    #website{
+        color: #FFEAC5;
+    }
+
+    .about-me{
+        box-shadow: 0px 0px 10px black;
+        margin: 50px;
+        margin-left: 57px;
+        margin-right: 57px;
+        padding: 39px 39px;
+        display: flex;
+        border-radius: 22px;
+        column-gap: 50px;
+        font-family:  Titillium Web;
+        flex-direction: row;
+        margin-bottom: 70px;
+    }
+
+    #ss{
+        width: 200px;
+        box-shadow: 0px 0px 40px rgba(255, 0, 0,0.4);
+        border-radius: 50%;
+    }
+
+    .logo{
+        align-self: center;
+        justify-self: center;
+    }
+
+    .text{
+        font-size: 20px;
+        width: auto;
+        position: relative;
+
+    }
+
+
+    #coder{
+        padding: 12px;
+        color: #FFEAC5;
+        font-size: 25px;
+        font-family: Titillium Web;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .skills{
+        display: flex;
+        margin-bottom: 70px;
+    }
+
+    .hz-line{
+        background-color: #FFEAC5;
+        height: 1px;
+        width: 240px;
+        position: relative;
+        top: 15px;
+        margin-bottom: 0px;
+    }
+
+    .skills h1{
+        position: relative;
+        bottom: 32px;
+        right:10px;
+        color: #FFEAC5;
+        font-size: 25px;
+        padding: 22px;
+        font-family: Titillium Web;
+    }
+
+    .languages{
+        margin: 0px 60px;
+        font-family:  Titillium Web;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .block-langauge{
+        border-radius: 7px;
+        padding: 12px;
+        margin: 27px;
+        width: 130px;
+        height: 60px;
+        box-shadow: 0px 0px 30px black;
+        border:1px solid #FFEAC5;
+        position:relative;
+        margin-left: 120px;
+    }
+
+    .context{
+        position: relative;
+        top: 4px;
+        left: 15px;
+        font-size: 15px;
+        float: left;
+        transition: transform 0.2s linear;
+    }
+
+    .progrsse{
+        font-size: 12px;
+        position: absolute;
+        color: #FFEAC5;
+        transform-origin: center;
+        transition: opacity 0.2s linear;
+        opacity: 0;
+    }
+
+    .block-langauge:hover{
+        background-color: #1b1b1b;
+    }
+
+    .block-langauge:hover .progrsse{
+        opacity: 1;
+    }
+
+    .block-langauge:hover .context{
+        transform: translateY(-5px);
+    }
+
+    .hz-line1{
+        background-color: #FFEAC5;
+        height: 1px;
+        width: 230px;
+        float: left;
+        position: relative;
+        right: 55px;
+    }
+
+    .h1-1{
+        color: var(--yellow);
+        position: relative;
+        bottom: 45px;
+        right: 65px;
+        float: left;
+    }
+
+    .thirdPage-hzLine{
+        margin-top: 120px;
+    }
+
+    .myProjects-container{
+        clear: both;
+    }
+
+    .myProjects{
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 100px;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+
+    .project{
+        padding: 18px 24px;
+        padding-bottom: 70px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: scale 0.5s;
+    }
+
+    .project:hover{
+        cursor: pointer;
+        scale: 1.2;
+    }
+
+    .project:hover img{
+        filter: blur(0);
+    }
+
+    .image{
+        transition: filter 0.7s;
+        filter: blur(2px);
+    }
+
+    .context-2{
+        position: relative;
+        top: 25px;
+        padding: 12px 22px;
+        font-size: 25px;
+        color: var(--yellow);
+        text-shadow: 0px 0px 10px var(--red);
+    }
+
+    .h1-2{
+        color: var(--yellow);
+        margin-bottom: 60px;
+        position: relative;
+        float: left;
+        bottom: 45px;
+        right:16px;
+    }
+
+    h1{
+        color: #FFEAC5;
+        font-size: 22px;
+        padding: 22px;
+        font-family: Titillium Web;
+    }
+
+    .none{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: Titillium Web;
+    }
+
+    .container-thirdPage{
+        padding-bottom: 150px;
+    }
+
+    @media (max-width: 768px) {
+
+        .identity {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        img {
+            height: 190px;
+        }
+
+        .whos-me {
+            display: flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+        }
+
+        .logo{
+            align-self: center;
+        }
+
+        .underline{
+            width: 100%;
+        }
+        .nav-bar{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            margin-top: 20;
+            padding: 0;
+            justify-content: center;
+        }
+
+        body{
+            margin: 20px;
+        }
+        
+
+        .about-me{
+            margin: 30px;
+            padding:22px 22px;
+            height: auto;
+            width: auto;
+        }
+
+        .text{
+            font-size: 15px;
+        }
+
+        .languages{
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+
+
+    .underline{
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--yellow);
+        scale: 0;
+    
+    }
+    
+    .menus a.activemenu .underline{
+        scale: 1;
+    }
+
+    .container-firstPage{
+        margin-bottom: 240px;
+    }
+    
